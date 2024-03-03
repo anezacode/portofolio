@@ -79,6 +79,7 @@ body.index_html {
     color: whitesmoke;
     text-align: center;
     margin-top: 30vh;
+    zoom: 100%;
 }
 
 body.index_html img.profile {
@@ -121,4 +122,10 @@ body.main_html div.content2 {
 
 body.main_html div.content3 {
     background-color: #1261a0;
+}
+
+@media screen and (max-width: 425px) {
+    body.index_html {
+        zoom: 80%;
+    }
 }
