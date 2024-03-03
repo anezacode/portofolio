@@ -1,0 +1,7 @@
+# .gitignore
+/dtbase/
+index.html
+404.html
+main.html
+style.css
+script.js
