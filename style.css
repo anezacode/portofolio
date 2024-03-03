@@ -1,0 +1,124 @@
+/*
+* #051f3e   [BG]
+* #072F5F   [MAIN]
+* #1261A0   [SUB]
+* #3895D3
+* #58CCED
+*/
+
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+::selection {
+    background-color: transparent;
+}
+
+body.fhf_html {
+    animation: dubStep 1s linear infinite;
+}
+
+body.fhf_html p.unfound {
+    font-family: monospace;
+    margin: 10px;
+    margin-left: 20px;
+    color: whitesmoke;
+    animation: textEpilepsy 1s linear infinite;
+}
+
+body.fhf_html b.fhf {
+    font-size: 300%;
+}
+
+body.fhf_html span.matter {
+    font-weight: bold;
+}
+
+@keyframes dubStep {
+    0% {
+        background-color: #051f3e;
+    }
+    
+    49% {
+        background-color: #051f3e;
+    }
+    
+    50% {
+        background-color: whitesmoke;
+    }
+    
+    100% {
+        background-color: whitesmoke;
+    }
+}
+
+@keyframes textEpilepsy {
+    0% {
+        color: whitesmoke;
+    }
+
+    49% {
+        color: whitesmoke;
+    }
+    
+    50% {
+        color: #051f3e;
+    }
+
+    100% {
+        color: #051f3e;
+    }
+}
+
+body.index_html {
+    font-family: monospace;
+    background-color: #051f3e;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 30vh;
+}
+
+body.index_html img.profile {
+    border-radius: 50px;
+    transition: 0.25s;
+}
+
+body.index_html img.profile:hover {
+    cursor: pointer;
+}
+
+body.index_html img.profile:active {
+    opacity: 50%;
+}
+
+body.index_html span.caption {
+    font-size: larger;
+    font-weight: bold;
+    user-select: text;
+}
+
+body.index_html span.motto {
+    font-size: smaller;
+    user-select: text;
+    opacity: 80%;
+}
+
+body.main_html {
+    font-family: monospace;
+    color: whitesmoke;
+}
+
+body.main_html div.content1 {
+    background-color: #051f3e;
+}
+
+body.main_html div.content2 {
+    background-color: #072f5f;
+}
+
+body.main_html div.content3 {
+    background-color: #1261a0;
+}
