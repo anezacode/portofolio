@@ -10,6 +10,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 ::selection {
@@ -78,8 +79,8 @@ body.index_html {
     color: whitesmoke;
     text-align: center;
     margin-top: 30vh;
-    zoom: 100%;
     user-select: none;
+    zoom: 100%;
 }
 
 body.index_html img.profile, body.main_html img.profile {
@@ -110,6 +111,7 @@ body.index_html span.motto, body.main_html span.motto {
 body.main_html {
     font-family: monospace;
     color: whitesmoke;
+    zoom: 100%;
 }
 
 body.main_html::selection {
@@ -119,18 +121,23 @@ body.main_html::selection {
 body.main_html ul {
     float: left;
     position: fixed;
-    top: 40vh;
+    top: 15em;
 }
 
 body.main_html li {
     background-color: #1261a0;
     padding: 20px 10px 20px 10px;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
     user-select: none;
     cursor: pointer;
     transition: 0.1s;
+}
+
+body.main_html a {
+    color: whitesmoke;
+    text-decoration: none;
 }
 
 body.main_html li:hover {
@@ -177,8 +184,27 @@ body.main_html h1.about_title {
     font-family: serif;
 }
 
-@media screen and (max-width: 425px) {
-    body.index_html {
-        zoom: 80%;
+body.main_html p.about_text {
+    text-align: left;
+    margin: 10px 20vw 0px 20vw;
+}
+
+body.main_html div.project_page {
+    background-color: #051f3e;
+    color: whitesmoke;
+    text-align: center;
+    height: 50vh;
+}
+
+body.main_html div.contact_page {
+    background-color: lightcyan;
+    color: whitesmoke;
+    text-align: center;
+    height: 50vh;
+}
+
+@media screen and (max-width: 768px) {
+    body.index_html, body.main_html {
+        zoom: 75%;
     }
 }
