@@ -10,14 +10,33 @@
 <body class="main_html">
     <nav>
         <ul>
-            <li class="home_nav">Home</li>
-            <li class="about_nav">About</li>
-            <li class="contact_nav">Contact</li>
+            <a href="#homePage">
+                <li class="home_nav">
+                    <img src="dtbase/nav_home.png" width="30vw">
+                </li>
+            </a>
+            <a href="#aboutPage">
+                <li class="about_nav">
+                    <img src="dtbase/nav_about.png" width="30vw">
+                </li>
+            </a>
+            <a href="#projectPage">
+                <li class="project_nav">
+                    <img src="dtbase/nav_project.png" width="30vw">
+                </li>
+            </a>
+            <a href="#contactPage">
+                <li class="contact_nav">
+                    <img src="dtbase/nav_contact.png" width="30vw">
+                </li>
+            </a>
         </ul>
     </nav>
     <div class="home_page" id="homePage">
         <div class="home_content">
-            <img src="dtbase/pfp.png" alt="&nbsp;pfp.png" width="50vw" class="profile" />
+            <a href="javascript:location.reload()">
+                <img src="dtbase/pfp.png" alt="&nbsp;pfp.png" width="50vw" class="profile" />
+            </a>
             <p style="margin-top: 1vh;">
                 <span class="caption">AnezaCode</span>
                 <br />
@@ -25,14 +44,23 @@
             </p>
         </div>
     </div>
-    <div class="about_page">
+    <div class="about_page" id="aboutPage">
         <div class="about_content">
             <h1 class="about_title">About Me?</h1>
-            <p>Assalamualaikum wr. wb.
-                <br />Perkenalkan saya Anggatra Satya Putra Nugroho.
-                <br />Saya duduk di kelas 10 / 1 SMK Jurusan PPLG.
-                <br />Cita-cita saya yaitu dapat membahagiakan orang-tua.
+            <p class="about_text">Assalamualaikum, perkenalkan nama saya Anggatra Satya Putra Nugroho, kelahiran 2008 pada tanggal 15 Mei di Jakarta.
+                Saya seorang pelajar kelas X PPLG 1 di SMK Prestasi Prima. Saya mempunyai tekad untuk menciptakan inovasi kreatif dalam permodelan perangkat lunak dan website, seperti bagaimana 
+                software aplikasi dapat dibuat dan bekerja, bahasa pemrograman apa yang harus dipahami, serta dampak dan peran penting seorang programmer di dunia.
             </p>
+        </div>
+    </div>
+    <div class="project_page" id="projectPage">
+        <div class="project_content">
+            <!--Content-->
+        </div>
+    </div>
+    <div class="contact_page" id="contactPage">
+        <div class="contact_content">
+            <!--Content-->
         </div>
     </div>
 </body>
