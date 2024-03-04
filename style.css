@@ -120,6 +120,7 @@ body.main_html ul {
     float: left;
     position: fixed;
     top: 40vh;
+    user-select: none;
 }
 
 body.main_html li {
