@@ -2,19 +2,18 @@
 * #051f3e   [BG]
 * #072F5F   [MAIN]
 * #1261A0   [SUB]
-* #3895D3
-* #58CCED
+* #3895D3   [ELEMENT]
+* #58CCED   [ELEMENT]
 */
 
 *, html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    user-select: none;
 }
 
 ::selection {
-    background-color: transparent;
+    background-color: #1261a0;
 }
 
 body.fhf_html {
@@ -80,31 +79,32 @@ body.index_html {
     text-align: center;
     margin-top: 30vh;
     zoom: 100%;
+    user-select: none;
 }
 
-body.index_html img.profile {
+body.index_html img.profile, body.main_html img.profile {
     border-radius: 50px;
-    transition: 0.25s;
+    transition: 0.1s;
 }
 
-body.index_html img.profile:hover {
+body.index_html img.profile:hover, body.main_html img.profile:hover {
     cursor: pointer;
 }
 
-body.index_html img.profile:active {
+body.index_html img.profile:active, body.main_html img.profile:active {
     opacity: 50%;
 }
 
-body.index_html span.caption {
+body.index_html span.caption, body.main_html span.caption {
     font-size: larger;
     font-weight: bold;
-    user-select: text;
+    margin-left: 10px;
 }
 
-body.index_html span.motto {
+body.index_html span.motto, body.main_html span.motto {
     font-size: smaller;
-    user-select: text;
-    opacity: 80%;
+    color: gainsboro;
+    margin: 10px;
 }
 
 body.main_html {
@@ -112,16 +112,68 @@ body.main_html {
     color: whitesmoke;
 }
 
-body.main_html div.content1 {
-    background-color: #051f3e;
-}
-
-body.main_html div.content2 {
-    background-color: #072f5f;
-}
-
-body.main_html div.content3 {
+body.main_html::selection {
     background-color: #1261a0;
+}
+
+body.main_html ul {
+    float: left;
+    position: fixed;
+    top: 40vh;
+}
+
+body.main_html li {
+    background-color: #1261a0;
+    padding: 20px 10px 20px 10px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+body.main_html li:hover {
+    background-color: #0e4b7c;
+}
+
+body.main_html li:active {
+    background-color: #0d4470;;
+    color: gainsboro;
+}
+
+body.main_html li.home_nav {
+    border-radius: 0px 10px 0px 0px;
+}
+
+body.main_html li.contact_nav {
+    border-radius: 0px 0px 10px 0px;
+}
+
+body.main_html div.home_page {
+    background-color: #051f3e;
+    color: whitesmoke;
+    text-align: center;
+    height: 50vh;
+}
+
+body.main_html div.home_content {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    padding-top: 20vh;
+}
+
+body.main_html div.about_page {
+    background-color: lightcyan;
+    color: #051f3e;
+    text-align: center;
+    height: 50vh;
+}
+
+body.main_html h1.about_title {
+    padding-top: 15vh;
+    font-weight: bolder;
+    font-family: serif;
 }
 
 @media screen and (max-width: 425px) {
