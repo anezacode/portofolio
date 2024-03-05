@@ -121,7 +121,7 @@ body.main_html::selection {
 body.main_html ul {
     float: left;
     position: fixed;
-    top: 15em;
+    top: 30%;
 }
 
 body.main_html li {
@@ -206,5 +206,9 @@ body.main_html div.contact_page {
 @media screen and (max-width: 768px) {
     body.index_html, body.main_html {
         zoom: 75%;
+    }
+
+    body.main_html ul {
+        top: 36%;
     }
 }
