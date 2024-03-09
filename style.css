@@ -4,6 +4,9 @@
 * #1261A0   [SUB]
 * #3895D3   [ELEMENT]
 * #58CCED   [ELEMENT]
+*
+* XXX in = _heigh
+* XXX em = _margin-top
 */
 
 *, html {
@@ -11,6 +14,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    transition: 0.1s;
 }
 
 ::selection {
@@ -118,13 +122,13 @@ body.main_html::selection {
     background-color: #1261a0;
 }
 
-body.main_html ul {
+body.main_html ul.page_nav {
     float: left;
     position: fixed;
     top: 30%;
 }
 
-body.main_html li {
+body.main_html ul.page_nav li {
     background-color: #1261a0;
     padding: 20px 10px 20px 10px;
     text-align: center;
@@ -140,20 +144,20 @@ body.main_html a {
     text-decoration: none;
 }
 
-body.main_html li:hover {
+body.main_html ul.page_nav li:hover {
     background-color: #0e4b7c;
 }
 
-body.main_html li:active {
+body.main_html ul.page_nav li:active {
     background-color: #0d4470;;
     color: gainsboro;
 }
 
-body.main_html li.home_nav {
+body.main_html ul.page_nav li.home_nav {
     border-radius: 0px 10px 0px 0px;
 }
 
-body.main_html li.contact_nav {
+body.main_html ul.page_nav li.contact_nav {
     border-radius: 0px 0px 10px 0px;
 }
 
@@ -161,27 +165,28 @@ body.main_html div.home_page {
     background-color: #051f3e;
     color: whitesmoke;
     text-align: center;
-    height: 50vh;
+    height: 3in;
 }
 
 body.main_html div.home_content {
     display: flex;
     text-align: left;
     justify-content: center;
-    padding-top: 20vh;
+    padding-top: 8em;
 }
 
 body.main_html div.about_page {
     background-color: lightcyan;
+    padding: 20px;
     color: #051f3e;
     text-align: center;
-    height: 50vh;
+    height: 5.5in;
 }
 
-body.main_html h1.about_title {
-    padding-top: 15vh;
+body.main_html h1.about_title, h1.project_title {
     font-weight: bolder;
     font-family: serif;
+    margin-top: 1.8em;
 }
 
 body.main_html p.about_text {
@@ -189,11 +194,36 @@ body.main_html p.about_text {
     margin: 10px 20vw 0px 20vw;
 }
 
+body.main_html button.portfolio_button {
+    background-color: transparent;
+    color: #051f3e;
+    font-weight: bold;
+    margin-top: 10px;
+    border: 1px solid #051f3e;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+body.main_html button.portfolio_button:hover {
+    background-color: rgb(215, 240, 255);
+}
+
+body.main_html button.portfolio_button:active {
+    background-color: rgb(185, 220, 255);
+}
+
 body.main_html div.project_page {
     background-color: #051f3e;
+    padding: 20px;
     color: whitesmoke;
     text-align: center;
-    height: 50vh;
+    height: 5.5in;
+}
+
+body.main_html div.project_management {
+    text-align: left;
+    margin: 10px 20vw 0px 20vw;
 }
 
 body.main_html div.contact_page {
@@ -208,7 +238,17 @@ body.main_html div.contact_page {
         zoom: 75%;
     }
 
-    body.main_html ul {
-        top: 36%;
+    body.main_html ul.page_nav {
+        top: 32%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body.main_html div.about_page {
+        height: 8in;
+    }
+
+    body.main_html div.project_page {
+        height: 6.5in;
     }
 }
